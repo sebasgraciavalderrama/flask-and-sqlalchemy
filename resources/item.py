@@ -1,7 +1,7 @@
 from flask_jwt import jwt_required
 from flask_restful import Resource, reqparse
 from models.item import ItemModel
-from db import db
+
 
 class Item(Resource):
     parser = reqparse.RequestParser()
