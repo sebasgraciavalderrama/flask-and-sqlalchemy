@@ -21,7 +21,6 @@ api = Api(app)
 
 jwt = JWT(app, authenticate, identity)
 
-
 #------ ADDITION OF RESOURCES TO OUR ENDPOINT ------
 api.add_resource(Store, '/store/<string:name>')
 api.add_resource(Item, '/item/<string:name>')
